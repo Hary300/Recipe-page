@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+
+  font-family: 'YoungSerif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'outfit', sans-serif;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 60%;
+  padding: 55px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.omelette {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.Container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.simple {
+  font-size: 45px;
+  font-family: 'YoungSerif', serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  line-height: 35px;
+  color: hsl(30, 10%, 34%);
+}
+
+.Container2 {
+  margin-top: 25px;
+  padding: 35px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+}
+
+.Preparation {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 12px;
+}
+
+/* Distance custom using ::before */
+ul.custom {
+  list-style-type: none;
+  font-size: 18px;
+  padding-left: 0px;
+  line-height: 35px;
+  color: hsl(30, 10%, 34%);
+}
+
+ul.custom li {
+  position: relative;
+  padding-left: 35px;
+}
+
+ul.custom li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+}
+
+/* Distance custom using ::marker */
+ol.custom {
+  padding-left: 45px;
+  line-height: 28px;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+ol.custom li::marker {
+  content: counter(list-item) '.      ';
+  color: hsl(30, 10%, 34%);
+}
+
+ol.custom li {
+  color: hsl(30, 10%, 34%);
+}
+
+span {
+  font-weight: 700;
+}
+
+.Container3 {
+  margin-top: 15px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 25px;
+}
+
+h2 {
+  font-size: 30px;
+  color: hsl(14, 45%, 36%);
+  font-family: 'YoungSerif', serif;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.Container4 {
+  margin-top: 15px;
+}
+
+table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 18px;
+  color: hsl(30, 10%, 34%);
+}
+
+tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+td {
+  padding: 12px 35px;
+}
+
+.value {
+  color: hsl(14, 45%, 36%);
+}
+
+.last {
+  border-bottom: none;
+}
+
+.attribution {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 376px) {
+  main {
+    width: 100%;
+    padding: 25px;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+
+  .Containerimg {
+    margin-top: -25px;
+    margin-right: -25px;
+    margin-left: -25px;
+  }
+
+  .omelette {
+    display: block;
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 30px;
+  }
+
+  .Container1 {
+    gap: 10px;
+  }
+
+  .simple {
+    font-size: 30px;
+    font-family: 'YoungSerif', serif;
+    font-weight: 400;
+  }
+
+  .attribution {
+    font-size: 15px;
+  }
+}
